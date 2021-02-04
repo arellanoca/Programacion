@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Mi primer HTML</title>
+    <style>
+        body
+        {
+        background-color: yellow;
+        color: blue;
+        font-family: sans-serif;
+        }
+        strong
+        {
+            background-color: aqua;    
+        }
+    </style>
+</head>
+<body>
+    <h1>Tu <strong>IMC</strong> Calculado</h1>
+    <p>Calculadora de Indice de masa Corporal</p>
+    <p>Por Carlos Arellano</p>
+    <p>Te ayudo a saber tu IMC con solo dos preguntas</p>
+    <p>Tu IMC es<p>
+<script>
+    var peso = prompt("Ingresa tu peso");
+    var talla = prompt("ingresa tu altura");
+    var t2 = talla * talla;
+    var IMC;
+    IMC = peso / t2;
+    IMC = parseInt(IMC);
+    document.write(IMC);
+</script>
+</body>
+</html>
